@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Set SCRIPT_ROOT (see http://flask.pocoo.org/docs/1.0/patterns/jquery/) -->
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/bootstrap.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/jquery.dataTables.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/responsive.dataTables.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/buttons.dataTables.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/datatables.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/select.dataTables.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/dataTables.editor.1.8.1.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library/css/colReorder.dataTables_1.5.2.min.css') }}">
+	
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/jquery-3.4.1.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/bootstrap.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/datatables.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/dataTables.responsive.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/jquery.tabledit.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/dataTables.buttons.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/dataTables.select.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/dataTables.editor.1.8.1.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/dataTables.colReorder.1.5.2.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/jszip.3.1.3.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/pdfmake.0.1.53.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/vfs_fonts.0.1.53.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/buttons.html5_1.6.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='library/js/buttons.print_1.6.1.min.js') }}"></script>
+     
+	<!-- Added on Jan 21, 2020 by Phuong Nguyen to enable inline table edit or CRUD -->
+	<script type="text/javascript" src="{{ url_for('static', filename='customize/js/custom_editor.js') }}"></script>
+	<!-- End of this CRUD adding -->
+    <title>Sample Flask - Datatables - CRUD - Website</title>
+  </head>
+  <body>
+	<div class="container">
+		<div id="content" class="col-sm">
+			{% if table %} 
+				Welcome to sample in combination of Flask-Datatables-CRUD site.<br><br>
+				{{ table|safe }}
+			{% endif %}
+		</div>
+	</div>
+  </body>
+</html>

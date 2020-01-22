@@ -1,0 +1,16 @@
+CREATE TABLE sample_data_table(id INTEGER, some_texts STRING, other_text STRING, other_text1 STRING, other_text2 STRING, other_text3 STRING, last_texts STRING); 
+INSERT INTO sample_data_table values(0, "Text of row 1", "Other text of Row 1", "Other text1 of Row 1", "Other text2 of Row 1", "Other text3 of Row 1", "Last text of Row 1"); 
+INSERT INTO sample_data_table values(1, "Text of row 2", "Other text of Row 2", "Other text1 of Row 2", "Other text2 of Row 2", "Other text3 of Row 2", "Last text of Row 2"); 
+INSERT INTO sample_data_table values(2, "Text of row 3", "Other text of Row 3", "Other text1 of Row 3", "Other text2 of Row 3", "Other text3 of Row 3", "Last text of Row 3");
+INSERT INTO sample_data_table values(3, "Text of row 4", "Other text of Row 4", "Other text1 of Row 4", "Other text2 of Row 4", "Other text3 of Row 4", "Last text of Row 4"); 
+INSERT INTO sample_data_table values(4, "Text of row 5", "Other text of Row 5", "Other text1 of Row 5", "Other text2 of Row 5", "Other text3 of Row 5", "Last text of Row 5");
+INSERT INTO sample_data_table values(5, "Text of row 6", "Other text of Row 6", "Other text1 of Row 6", "Other text2 of Row 6", "Other text3 of Row 6", "Last text of Row 6"); 
+INSERT INTO sample_data_table values(6, "Text of row 7", "Other text of Row 7", "Other text1 of Row 7", "Other text2 of Row 7", "Other text3 of Row 7", "Last text of Row 7"); 
+INSERT INTO sample_data_table values(7, "Text of row 8", "Other text of Row 8", "Other text1 of Row 8", "Other text2 of Row 8", "Other text3 of Row 8", "Last text of Row 8"); 
+INSERT INTO sample_data_table values(8, "Text of row 9", "Other text of Row 9", "Other text1 of Row 9", "Other text2 of Row 9", "Other text3 of Row 1", "Last text of Row 9"); 
+INSERT INTO sample_data_table values(9, "Text of row 10", "Other text of Row 10", "Other text1 of Row 10", "Other text2 of Row 10", "Other text3 of Row 10", "Last text of Row 10");
+INSERT INTO sample_data_table values(10, "Text of row 11", "Other text of Row 11", "Other text1 of Row 11", "Other text2 of Row 11", "Other text3 of Row 11", "Last text of Row 11");
+INSERT INTO sample_data_table values(11, "Text of row 12", "Other text of Row 12", "Other text1 of Row 12", "Other text2 of Row 12", "Other text3 of Row 12", "Last text of Row 12");
+INSERT INTO sample_data_table values(12, "Text of row 13", "Other text of Row 13", "Other text1 of Row 13", "Other text2 of Row 13", "Other text3 of Row 13", "Last text of Row 13");
+INSERT INTO sample_data_table values(13, "Text of row 14", "Other text of Row 14", "Other text1 of Row 14", "Other text2 of Row 14", "Other text3 of Row 14", "Last text of Row 14");
+INSERT INTO sample_data_table values(14, "Text of row 15", "Other text of Row 15", "Other text1 of Row 15", "Other text2 of Row 15", "Other text3 of Row 15", "Last text of Row 15");
